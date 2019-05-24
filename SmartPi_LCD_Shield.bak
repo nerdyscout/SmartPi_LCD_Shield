@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:SmartPi_LCD_Shield-cache
 EELAYER 29 0
 EELAYER END
@@ -1087,7 +1087,7 @@ Wire Wire Line
 	6600 1600 6250 1600
 Text Label 4750 1900 0    50   ~ 0
 RFM_RST
-Text Label 6650 2100 2    50   ~ 0
+Text Label 6600 2100 2    50   ~ 0
 RFM_D0
 Wire Wire Line
 	6250 2100 6650 2100
@@ -1190,7 +1190,7 @@ Text Label 7800 5350 0    50   ~ 0
 RTC_SQW
 Text Label 8850 2350 2    50   ~ 0
 RTC_SQW
-Text Label 11000 5800 1    50   ~ 0
+Text Label 10800 5450 0    50   ~ 0
 RTC_RST
 Text Label 8850 2150 2    50   ~ 0
 RTC_RST
@@ -1359,17 +1359,6 @@ Connection ~ 2750 5250
 Connection ~ 2600 5400
 Connection ~ 2750 5550
 $Comp
-L Connector:TestPoint CreativeCommonsPublicDomain1
-U 1 1 5CDBC513
-P 8000 6800
-F 0 "CreativeCommonsPublicDomain1" H 8058 6872 50  0000 L CNN
-F 1 "License" H 8058 6827 50  0001 L CNN
-F 2 "Symbol:Symbol_CreativeCommonsPublicDomain_SilkScreenTop_Small" H 8200 6800 50  0001 C CNN
-F 3 "~" H 8200 6800 50  0001 C CNN
-	1    8000 6800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint KiCad1
 U 1 1 5CDBD805
 P 8000 7050
@@ -1412,17 +1401,6 @@ F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5250 4200 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 5250 4200 50  0001 C CNN
 	3    5250 4200
 	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:4050 U4
-U 4 1 5CE48D58
-P 10450 6000
-F 0 "U4" H 10600 5900 50  0000 C CNN
-F 1 "4050" H 10400 6000 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 10450 6000 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 10450 6000 50  0001 C CNN
-	4    10450 6000
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4950 4200 4700 4200
@@ -1471,31 +1449,6 @@ F 3 "" H 7250 5250 50  0001 C CNN
 	1    7250 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L 4xxx:4050 U4
-U 5 1 5CE5FA53
-P 10450 6300
-F 0 "U4" H 10650 6200 50  0000 C CNN
-F 1 "4050" H 10400 6300 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 10450 6300 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 10450 6300 50  0001 C CNN
-	5    10450 6300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	11000 5450 11000 5800
-Wire Wire Line
-	10650 5450 11000 5450
-Wire Wire Line
-	10800 5150 10800 6000
-Wire Wire Line
-	10800 6000 10750 6000
-Connection ~ 10800 5150
-Wire Wire Line
-	10900 5050 10900 6300
-Wire Wire Line
-	10900 6300 10750 6300
-Connection ~ 10900 5050
 $Comp
 L power:+5V #PWR0104
 U 1 1 5CE6DFC4
@@ -1567,32 +1520,6 @@ $EndComp
 Wire Wire Line
 	9750 5750 9750 5650
 $Comp
-L Connector:TestPoint TP7
-U 1 1 5CE480C5
-P 9500 6000
-F 0 "TP7" V 9695 6072 50  0000 C CNN
-F 1 "TestPoint" V 9604 6072 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9700 6000 50  0001 C CNN
-F 3 "~" H 9700 6000 50  0001 C CNN
-	1    9500 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5CE4867F
-P 9500 6300
-F 0 "TP8" V 9695 6372 50  0000 C CNN
-F 1 "TestPoint" V 9604 6372 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9700 6300 50  0001 C CNN
-F 3 "~" H 9700 6300 50  0001 C CNN
-	1    9500 6300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 6300 10150 6300
-Wire Wire Line
-	9500 6000 10150 6000
-$Comp
 L power:+5V #PWR0110
 U 1 1 5CE4AB80
 P 1000 2500
@@ -1602,5 +1529,59 @@ F 2 "" H 1000 2500 50  0001 C CNN
 F 3 "" H 1000 2500 50  0001 C CNN
 	1    1000 2500
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 5450 11150 5450
+$Comp
+L power:+5V #PWR?
+U 1 1 5CE6A151
+P 4000 3700
+F 0 "#PWR?" H 4000 3550 50  0001 C CNN
+F 1 "+5V" V 4000 3900 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Text Label 6600 1600 2    50   ~ 0
+RFM_D5
+Text Label 8850 2450 2    50   ~ 0
+RFM_D5
+Text Label 6600 2000 2    50   ~ 0
+RFM_D1
+Text Label 6600 1900 2    50   ~ 0
+RFM_D2
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CE6B5D7
+P 10000 2750
+F 0 "TP?" V 10000 2950 50  0000 L CNN
+F 1 "TestPoint" V 10000 3150 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10200 2750 50  0001 C CNN
+F 3 "~" H 10200 2750 50  0001 C CNN
+	1    10000 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CE6BC9E
+P 10000 2650
+F 0 "TP?" V 10000 2850 50  0000 L CNN
+F 1 "TestPoint" V 10000 3050 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10200 2650 50  0001 C CNN
+F 3 "~" H 10200 2650 50  0001 C CNN
+	1    10000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CE6BF48
+P 10000 2550
+F 0 "TP?" V 10000 2750 50  0000 L CNN
+F 1 "TestPoint" V 10000 2950 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10200 2550 50  0001 C CNN
+F 3 "~" H 10200 2550 50  0001 C CNN
+	1    10000 2550
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
