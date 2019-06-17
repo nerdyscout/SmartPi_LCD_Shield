@@ -6,10 +6,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SmartPi LCD Shield by nerdyscout"
-Date "2019-05-10"
-Rev "v2r1"
-Comp "openhardware"
-Comment1 ""
+Date "2019-06-17"
+Rev "beta"
+Comp "http://twitter.com/nerdyscout84/"
+Comment1 "https://github.com/nerdyscout/SmartPi_LCD_Shield/releases/tag/beta"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1287,12 +1287,12 @@ Wire Wire Line
 $Comp
 L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5D2A46C2
-P 7300 6850
-F 0 "LOGO1" H 7300 7125 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 7300 6625 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 7300 6850 50  0001 C CNN
-F 3 "~" H 7300 6850 50  0001 C CNN
-	1    7300 6850
+P 10900 6850
+F 0 "LOGO1" H 10900 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10900 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 10900 6850 50  0001 C CNN
+F 3 "~" H 10900 6850 50  0001 C CNN
+	1    10900 6850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1330,12 +1330,12 @@ Connection ~ 2550 5550
 $Comp
 L Connector:TestPoint KiCad1
 U 1 1 5CDBD805
-P 8000 7050
-F 0 "KiCad1" H 8058 7122 50  0000 L CNN
-F 1 "License" H 8058 7077 50  0001 L CNN
-F 2 "Symbol:KiCad-Logo2_8mm_SilkScreen" H 8200 7050 50  0001 C CNN
-F 3 "~" H 8200 7050 50  0001 C CNN
-	1    8000 7050
+P 10750 6400
+F 0 "KiCad1" H 10808 6472 50  0000 L CNN
+F 1 "License" H 10808 6427 50  0001 L CNN
+F 2 "Symbol:KiCad-Logo2_8mm_SilkScreen" H 10950 6400 50  0001 C CNN
+F 3 "~" H 10950 6400 50  0001 C CNN
+	1    10750 6400
 	1    0    0    -1  
 $EndComp
 $Comp
