@@ -1687,4 +1687,6 @@ Wire Wire Line
 	6000 6000 6000 5750
 Wire Wire Line
 	6000 5750 6100 5750
+Text Label 10250 2450 2    50   ~ 0
+A0
 $EndSCHEMATC
